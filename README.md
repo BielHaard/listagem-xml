@@ -22,10 +22,10 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 - http://localhost:8080/api/recibos/xml
 
 ## Endpoints
-/api/recibos/json
-Retorna a lista de recibos em formato JSON.
+- /api/recibos/json
+-Retorna a lista de recibos em formato JSON.
 
-Exemplo de resposta:
+-Exemplo de resposta:
 
 [
   {
@@ -53,3 +53,36 @@ Exemplo de resposta:
     "totalRecebido": 100.0
   }
 ]
+
+
+- /api/recibos/xml
+- Retorna a lista de recibos em formato XML.
+
+Exemplo de resposta:
+<recibos>
+  <recibo>
+    <id>1</id>
+    <empresa>
+      <nome>Telecom XYZ Ltda</nome>
+      <cnpj>12.345.678/0001-90</cnpj>
+      <endereco>
+        <rua>Avenida Principal, 123</rua>
+        <cidade>São Paulo</cidade>
+        <estado>SP</estado>
+        <cep>01000-000</cep>
+      </endereco>
+    </empresa>
+    <cliente>
+      <nome>João da Silva</nome>
+      <cpf>123.456.789-00</cpf>
+      <endereco>
+        <rua>Rua Secundária, 456</rua>
+        <cidade>São Paulo</cidade>
+        <estado>SP</estado>
+        <cep>02000-000</cep>
+      </endereco>
+    </cliente>
+    <totalRecebido>100.0</totalRecebido>
+  </recibo>
+</recibos>
+
