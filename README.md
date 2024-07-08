@@ -18,8 +18,8 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 
 ## Isso iniciará a aplicação Spring Boot. Os endpoints estarão disponíveis em:
 
-- http://localhost:8080/api/recibos/json
-- http://localhost:8080/api/recibos/xml
+- [base_url]/api/recibos/json
+- [base_url]/api/recibos/xml
 
 ## Endpoints
 - /api/recibos/json
