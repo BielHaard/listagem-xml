@@ -23,9 +23,9 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 
 ## Endpoints
 - /api/recibos/json
--Retorna a lista de recibos em formato JSON.
+- Retorna a lista de recibos em formato JSON.
 
--Exemplo de resposta:
+- Exemplo de resposta:
 
 [
   {
@@ -58,7 +58,8 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 - /api/recibos/xml
 - Retorna a lista de recibos em formato XML.
 
-Exemplo de resposta:
+- Exemplo de resposta:
+
 <recibos>
   <recibo>
     <id>1</id>
