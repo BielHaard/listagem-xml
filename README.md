@@ -27,7 +27,7 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 
 - Exemplo de resposta:
 
-'''[
+```[
   {
     "id": 1,
     "empresa": {
@@ -52,7 +52,7 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
     },
     "totalRecebido": 100.0
   }
-]'''
+] ```
 
 
 - /api/recibos/xml
@@ -60,7 +60,7 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
 
 - Exemplo de resposta:
 
-'''<recibos>
+```<recibos>
   <recibo>
     <id>1</id>
     <empresa>
@@ -85,5 +85,5 @@ Este é um projeto básico em Spring Boot que demonstra a criação de dois endp
     </cliente>
     <totalRecebido>100.0</totalRecebido>
   </recibo>
-</recibos>'''
+</recibos> ```
 
