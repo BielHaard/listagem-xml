@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ReciboService {
     List<Recibo> getRecibos();
+
+    Recibo getReciboPorId(int id);
 }

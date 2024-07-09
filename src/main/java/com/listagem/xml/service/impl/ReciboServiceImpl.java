@@ -30,4 +30,12 @@ public class ReciboServiceImpl implements ReciboService {
     public List<Recibo> getRecibos() {
         return recibos;
     }
+
+    @Override
+    public Recibo getReciboPorId(int id) {
+        return recibos.stream()
+                .filter(recibo -> recibo.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
 }

@@ -8,6 +8,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,7 +20,15 @@ public class Recibo {
     private int id;
     private Empresa empresa;
     private Cliente cliente;
-    private double totalRecebido;
+    private Double totalRecebido;
+
+    public String getTotalRecebidoFormatado() {
+        if (totalRecebido != null) {
+            DecimalFormat df = new DecimalFormat("#.00", new DecimalFormatSymbols(Locale.US));
+            return df.format(totalRecebido);
+        }
+        return null;
+    }
 
     public String toStringXml() {
         try {
